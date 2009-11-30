@@ -45,7 +45,7 @@ class LocationService {
                             coordsCache[location] = coordsPair
                         }
                         
-                        return coords
+                        return coordsPair
                     }
                 }
             }
