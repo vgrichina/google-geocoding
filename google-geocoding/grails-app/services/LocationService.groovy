@@ -18,7 +18,7 @@ class LocationService {
                 // like iPhone: 39.035248,-77.138687
                 location = location.replace("iPhone: ", "")
                 def parts = location.split(",")
-                return [latitude: parts[0], longitude: parts[1]]
+                return [latitude: parts[0] as Double, longitude: parts[1] as Double]
             } else {
                 synchronized (coordsCache) {
                     // Return location coords if it already exists in cache
